@@ -5,6 +5,7 @@
   <title>Index Flux - All Tools</title>
   <link rel="stylesheet" href="./style.css">
   <link href="https://cdn.1x.no/remixicon/4.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/scrollbar.css">
 </head>
 
 <body>

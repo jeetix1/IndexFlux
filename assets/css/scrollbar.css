@@ -1,0 +1,20 @@
+/* Ensure scrollbar is always "there" to avoid page alignment shifting*/
+html {
+  overflow-y: scroll;
+}
+
+html::-webkit-scrollbar {
+  width: 16px;
+  background-color: var(--bg-color);
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: var(--secondary-color);
+  border-radius: 3px;
+  transition: background-color 0.3s;
+}
+
+/* Increase opacity on hover */
+html::-webkit-scrollbar-thumb:hover {
+    background-color: var(--primary-color);
+}
