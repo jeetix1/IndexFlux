@@ -1,5 +1,5 @@
-/* Ensure scrollbar is always "there" to avoid page alignment shifting*/
-html {
+
+html { /* Ensures scrollbar is always "there" to avoid page alignment shifting*/
   overflow-y: scroll;
 }
 
