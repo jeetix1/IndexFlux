@@ -136,10 +136,14 @@ body.widescreen-mode .top-bar-wrapper {
 
 .tool-icon {
   font-size: 48px;
-  margin-bottom: 10px;
+  min-height: 72px;
+  max-height: 72px;
+  /* padding-bottom: 72px; */
+  
 }
 
 .tool-name {
+  padding-top: 10px;
   font-weight: bold;
   margin-bottom: 5px;
 }
@@ -258,3 +262,8 @@ body.navbar-unpinned .fixed-top-bar-container {
   transform: translateY(-5px);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
+
+/* .st2 {
+  fill: var(--text-color);
+  background-color: var(--secondary-color);
+} */

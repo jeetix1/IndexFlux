@@ -34,7 +34,9 @@
 </div>
 
 <div class="tool-card" data-categories="bookmarks,entertainment,video" onclick="location.href='./category/toolname'">
-    <div class="tool-icon">🏷️</div>
+    <div class="tool-icon">
+        <img src="./assets/div/YouTube-Logo.png" alt="YouTube" height="72px" width="245px" style="background: white;">
+</div>
     <div class="tool-name">YouTube</div>
     <div class="tool-description">Short description of the tool's functionality, ideally not much more than one sentence.</div>
     <div class="tool-tags">
