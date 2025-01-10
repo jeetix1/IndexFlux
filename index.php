@@ -17,7 +17,7 @@
         <div class="top-bar-group">
           <div class="dropdown">
             <button class="dropbtn">
-              <img src="https://cdn.1x.no/remixicon/4.5.0/icons/System/menu-fill.svg" alt="Menu" width="24" height="24" style="filter: invert(1);">
+              <img src="https://cdn.1x.no/remixicon/4.5.0/icons/System/menu-fill.svg" alt="Menu" width="24" height="24" style="filter: var(--topbar-img-filter)">
             </button>
             <div class="dropdown-content">
               <!-- <hr style="border: none; border-top: 1px solid var(--text-color); margin: 5px 0;"> -->
