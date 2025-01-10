@@ -33,12 +33,12 @@
     </div>
 </div>
 
-<div class="tool-card" data-categories="bookmarks,entertainment,video" onclick="location.href='./category/toolname'">
+<div class="tool-card" data-categories="bookmarks,entertainment,video" onclick="window.open('https://www.youtube.com/', '_blank')">
     <div class="tool-icon">
-        <img src="./assets/div/YouTube-Logo.png" alt="YouTube" height="72px" width="245px" style="background: white;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg" alt="YouTube" height="72px" width="245px" style="background: white;">
 </div>
     <div class="tool-name">YouTube</div>
-    <div class="tool-description">Short description of the tool's functionality, ideally not much more than one sentence.</div>
+    <div class="tool-description">Video-sharing platform that allows users to upload, watch, and share videos.</div>
     <div class="tool-tags">
         <span class="tool-tag">Bookmarks</span>
         <span class="tool-tag">Entertainment</span>
