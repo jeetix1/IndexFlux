@@ -90,7 +90,6 @@ body.widescreen-mode .top-bar-wrapper {
   gap: 15px;
 }
 
-
 .container {
   min-height: 100vh;
   background-color: var(--bg-color);
@@ -152,7 +151,6 @@ body.widescreen-mode .top-bar-wrapper {
   min-height: 72px;
   max-height: 72px;
   /* padding-bottom: 72px; */
-  
 }
 
 .tool-name {

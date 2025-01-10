@@ -20,7 +20,6 @@
               <img src="https://cdn.1x.no/remixicon/4.5.0/icons/System/menu-fill.svg" alt="Menu" width="24" height="24" style="filter: var(--topbar-img-filter)">
             </button>
             <div class="dropdown-content">
-              <!-- <hr style="border: none; border-top: 1px solid var(--text-color); margin: 5px 0;"> -->
               <a href="./">Home</a>
               <a href="./dashboard">Dashboard</a>
               <a href="./settings">Settings</a>
@@ -71,7 +70,8 @@
     </div>
     <div class="tool-grid">
 
-      <?php include './tools.php'; // Tools moved to separate file ?> 
+      <?php include './tools.php'; // Tools moved to separate file 
+      ?>
 
     </div>
   </div>
@@ -190,34 +190,34 @@
     });
 
     // User toggle functionality
-    document.addEventListener("DOMContentLoaded", function () {
-    // Initialize user signed-in state
-    const isUserSignedIn = localStorage.getItem("userSignedIn") === "true";
-    updateUserIcon(isUserSignedIn);
+    document.addEventListener("DOMContentLoaded", function() {
+      // Initialize user signed-in state
+      const isUserSignedIn = localStorage.getItem("userSignedIn") === "true";
+      updateUserIcon(isUserSignedIn);
 
-    // Add click event for user toggle
-    document.querySelector(".toggle-user-btn").addEventListener("click", function () {
-      const signedIn = !localStorage.getItem("userSignedIn") || localStorage.getItem("userSignedIn") === "false";
-      localStorage.setItem("userSignedIn", signedIn);
-      updateUserIcon(signedIn);
+      // Add click event for user toggle
+      document.querySelector(".toggle-user-btn").addEventListener("click", function() {
+        const signedIn = !localStorage.getItem("userSignedIn") || localStorage.getItem("userSignedIn") === "false";
+        localStorage.setItem("userSignedIn", signedIn);
+        updateUserIcon(signedIn);
+      });
+
+      // Hover effect for user toggle button
+      document.querySelector(".toggle-user-btn").addEventListener("mouseover", function() {
+        const userIcon = document.querySelector(".toggle-user-btn i");
+        userIcon.className = isUserSignedIn ? "ri-logout-box-line" : "ri-login-box-line";
+      });
+
+      document.querySelector(".toggle-user-btn").addEventListener("mouseout", function() {
+        updateUserIcon(localStorage.getItem("userSignedIn") === "true");
+      });
+
+      // Update user icon based on signed-in state
+      function updateUserIcon(isSignedIn) {
+        const userIcon = document.querySelector(".toggle-user-btn i");
+        userIcon.className = isSignedIn ? "ri-shield-user-line" : "ri-user-line";
+      }
     });
-
-    // Hover effect for user toggle button
-    document.querySelector(".toggle-user-btn").addEventListener("mouseover", function () {
-      const userIcon = document.querySelector(".toggle-user-btn i");
-      userIcon.className = isUserSignedIn ? "ri-logout-box-line" : "ri-login-box-line";
-    });
-
-    document.querySelector(".toggle-user-btn").addEventListener("mouseout", function () {
-      updateUserIcon(localStorage.getItem("userSignedIn") === "true");
-    });
-
-    // Update user icon based on signed-in state
-    function updateUserIcon(isSignedIn) {
-      const userIcon = document.querySelector(".toggle-user-btn i");
-      userIcon.className = isSignedIn ? "ri-shield-user-line" : "ri-user-line";
-    }
-  });
   </script>
 
 </body>
