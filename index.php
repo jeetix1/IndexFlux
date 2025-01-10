@@ -48,6 +48,9 @@
           <div class="toggle-pin-btn">
             <i class="ri-pushpin-line" style="font-size: 24px; color: var(--text-color);"></i>
           </div>
+          <div class="toggle-user-btn">
+            <i class="ri-shield-user-line" style="font-size: 24px; color: var(--text-color);"></i>
+          </div>
         </div>
 
       </div>
@@ -185,6 +188,36 @@
         filterTools('', category);
       });
     });
+
+    // User toggle functionality
+    document.addEventListener("DOMContentLoaded", function () {
+    // Initialize user signed-in state
+    const isUserSignedIn = localStorage.getItem("userSignedIn") === "true";
+    updateUserIcon(isUserSignedIn);
+
+    // Add click event for user toggle
+    document.querySelector(".toggle-user-btn").addEventListener("click", function () {
+      const signedIn = !localStorage.getItem("userSignedIn") || localStorage.getItem("userSignedIn") === "false";
+      localStorage.setItem("userSignedIn", signedIn);
+      updateUserIcon(signedIn);
+    });
+
+    // Hover effect for user toggle button
+    document.querySelector(".toggle-user-btn").addEventListener("mouseover", function () {
+      const userIcon = document.querySelector(".toggle-user-btn i");
+      userIcon.className = isUserSignedIn ? "ri-logout-box-line" : "ri-login-box-line";
+    });
+
+    document.querySelector(".toggle-user-btn").addEventListener("mouseout", function () {
+      updateUserIcon(localStorage.getItem("userSignedIn") === "true");
+    });
+
+    // Update user icon based on signed-in state
+    function updateUserIcon(isSignedIn) {
+      const userIcon = document.querySelector(".toggle-user-btn i");
+      userIcon.className = isSignedIn ? "ri-shield-user-line" : "ri-user-line";
+    }
+  });
   </script>
 
 </body>
