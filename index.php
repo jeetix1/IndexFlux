@@ -20,10 +20,11 @@
               <img src="https://cdn.1x.no/remixicon/4.5.0/icons/System/menu-fill.svg" alt="Menu" width="24" height="24" style="filter: var(--topbar-img-filter)">
             </button>
             <div class="dropdown-content">
-              <a href="./">Home</a>
-              <a href="./dashboard">Dashboard</a>
-              <a href="./settings">Settings</a>
-              <a href="./help">Help</a>
+              <a href="./"><i class="ri-home-line"></i> Home</a>
+              <a href="./dashboard"><i class="ri-dashboard-line"></i> Dashboard</a>
+              <a href="./tools/"><i class="ri-tools-line"></i> Tools</a>
+              <a href="./settings"><i class="ri-settings-3-line"></i> Settings</a>
+              <a href="./help"><i class="ri-question-line"></i> Help</a>
             </div>
           </div>
         </div>
