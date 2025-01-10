@@ -39,6 +39,12 @@
 
         <!-- TOGGLES GROUP -->
         <div class="top-bar-group">
+          <div class="toggle-user-btn">
+            <i class="ri-shield-user-line" style="font-size: 24px; color: var(--text-color);"></i>
+          </div>
+          <div>
+            <span class="top-bar-group-divider" style="border-right: 1px solid lightgray;"></span>
+          </div>
           <div class="toggle-width-btn">
             <i class="ri-fullscreen-line" style="font-size: 24px; color: var(--text-color);"></i>
           </div>
@@ -47,9 +53,6 @@
           </div>
           <div class="toggle-pin-btn">
             <i class="ri-pushpin-line" style="font-size: 24px; color: var(--text-color);"></i>
-          </div>
-          <div class="toggle-user-btn">
-            <i class="ri-shield-user-line" style="font-size: 24px; color: var(--text-color);"></i>
           </div>
         </div>
 
